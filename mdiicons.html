@@ -4,7 +4,9 @@
 
     <ul>
         <li ng-repeat="icon in icons | filter:query | limitTo : 10">
-                <button ng-click="pick(icon, $event)"> {{ icon }} <i class="mdi {{ icon }}"></i> </button>
+            <button ng-click="pick(icon, $event)" ng-style="{ background : (model.value == icon) ? 'green' : 'white' }"> {{ icon }} 
+                <i class="mdi {{ icon }}"></i>
+            </button>
         </li>
     </ul>
 

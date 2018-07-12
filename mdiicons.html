@@ -3,7 +3,7 @@
     <input ng-model="query" type="text" />
 
     <ul>
-        <li ng-repeat="icon in icons">
+        <li ng-repeat="icon in icons | filter:query">
             {{ icon }} <i class="mdi {{ icon }}"></i>
         </li>
     </ul>

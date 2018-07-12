@@ -3,8 +3,8 @@
     <input ng-model="query" type="text" />
 
     <ul>
-        <li>
-            mdi-account <i class="mdi mdi-account"></i>
+        <li ng-repeat="icon in icons">
+            {{ icon }} <i class="mdi {{ icon }}"></i>
         </li>
     </ul>
 

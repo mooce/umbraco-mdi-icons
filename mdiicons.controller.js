@@ -4,4 +4,11 @@ angular.module("umbraco")
         
         //load in mdi css
         assetsService.loadCss("/App_Plugins/MooceMdiIconPicker/css/materialdesignicons.css");
+
+        $scope.icons = [
+            'mdi-access-point',
+            'mdi-account'
+        ]
+
+        $scope.query = ''
     });

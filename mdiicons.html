@@ -4,7 +4,7 @@
 
     <ul>
         <li ng-repeat="icon in icons | filter:query">
-                <button ng-click="pick(icon)"> {{ icon }} <i class="mdi {{ icon }}"></i> </button>
+                <button ng-click="pick(icon, $event)"> {{ icon }} <i class="mdi {{ icon }}"></i> </button>
         </li>
     </ul>
 

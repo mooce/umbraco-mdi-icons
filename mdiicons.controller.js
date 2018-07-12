@@ -2605,7 +2605,9 @@ angular.module("umbraco")
 
         $scope.query = ''
 
-        $scope.pick = function(icon) {
+        $scope.pick = function(icon, $event) {
+
+            $event.preventDefault();
 
             $scope.model.value = icon;
         }

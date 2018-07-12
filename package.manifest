@@ -1,0 +1,15 @@
+{   
+    propertyEditors: [      
+        {
+            alias: "Mooce.MdiIconPicker",
+            name: "Mdi Icon Picker",
+            editor: {
+                view: "~/App_Plugins/MooceMdiIconPicker/mdiicons.html"
+            }
+        }
+    ]
+    ,
+    javascript: [
+        '~/App_Plugins/MooceMdiIconPicker/mdiicons.controller.js'
+    ]
+}

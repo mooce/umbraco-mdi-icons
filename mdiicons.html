@@ -1,10 +1,9 @@
 <div ng-controller="Mooce.MdiIconPicker">
-    <label>Search</label>
     <input ng-model="query" type="text" />
 
     <ul>
         <li ng-repeat="icon in icons | filter:query | limitTo : 10">
-            <button ng-click="pick(icon, $event)" ng-style="{ background : (model.value == icon) ? 'green' : 'white' }"> {{ icon }} 
+            <button class="btn" ng-click="pick(icon, $event)" ng-style="{ background : (model.value == icon) ? '#33bf81' : 'white' }"> {{ icon }} 
                 <i class="mdi {{ icon }}"></i>
             </button>
         </li>

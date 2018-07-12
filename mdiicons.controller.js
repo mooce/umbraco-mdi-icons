@@ -11,4 +11,9 @@ angular.module("umbraco")
         ]
 
         $scope.query = ''
+
+        $scope.pick = function(icon) {
+
+            $scope.model.value = icon;
+        }
     });

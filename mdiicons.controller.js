@@ -4,6 +4,7 @@ angular.module("umbraco")
         
         //load in mdi css
         assetsService.loadCss("/App_Plugins/MooceMdiIconPicker/css/materialdesignicons.css");
+        assetsService.loadCss("/App_Plugins/MooceMdiIconPicker/css/mdiicons.css");
 
         $scope.icons = [
             'mdi-access-point',

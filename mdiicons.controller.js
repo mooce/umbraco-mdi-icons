@@ -1,6 +1,8 @@
 angular.module("umbraco")
     .controller("Mooce.MdiIconPicker",
     function ($scope,assetsService) {
+
+        var browserToggled = false;
         
         //load in mdi css
         assetsService.loadCss("/App_Plugins/MooceMdiIconPicker/css/materialdesignicons.css");
@@ -2605,6 +2607,23 @@ angular.module("umbraco")
         ]
 
         $scope.query = ''
+
+        $scope.hasSelected = function() {
+
+            return !!$scope.model.value;
+        }
+
+        $scope.hasBrowser = function() {
+
+            return !$scope.model.value;
+        }
+
+        $scope.clear = function($event) {
+
+            $event.preventDefault();
+
+            $scope.model.value = '';
+        }
 
         $scope.pick = function(icon, $event) {
 

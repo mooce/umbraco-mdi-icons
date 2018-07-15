@@ -1,6 +1,28 @@
 .mooce-mdiicons .mooce-field-wrapper {
   position: relative;
 }
+
+.mooce-mdiicons .mooce-field-control span {
+  float:left;
+}
+.mooce-mdiicons .mooce-field-control span label {
+  margin: 0;
+  padding: 0.125rem 0.25rem;
+}
+.mooce-mdiicons .mooce-field-control span:hover button {
+  visibility: visible;
+}
+.mooce-mdiicons .mooce-field-control span button {
+  visibility: hidden;
+  background: none;
+  border:none;
+  font-size: 1.5rem;
+  color:#ff008d;
+}
+.mooce-mdiicons .mooce-field-control button {
+  float: right;
+}
+
 .mooce-mdiicons .mooce-field-wrapper input {
   width:100%;
 }

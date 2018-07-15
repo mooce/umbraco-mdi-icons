@@ -2,7 +2,7 @@ angular.module("umbraco")
     .controller("Mooce.MdiIconPicker",
     function ($scope,assetsService) {
 
-        var browserToggled = false;
+        var browserToggled = !false;
         
         //load in mdi css
         assetsService.loadCss("/App_Plugins/MooceMdiIconPicker/css/materialdesignicons.css");
@@ -2615,12 +2615,15 @@ angular.module("umbraco")
 
         $scope.hasBrowser = function() {
 
-            return true; //!$scope.model.value;
+            return browserToggled || !$scope.model.value;
         }
 
         $scope.toggleBrowser = function($event) {
 
             $event.preventDefault();
+
+            browserToggled = !browserToggled;
+
         }
 
         $scope.clear = function($event) {
@@ -2628,6 +2631,7 @@ angular.module("umbraco")
             $event.preventDefault();
 
             $scope.model.value = '';
+            browserToggled = false;
         }
 
         $scope.pick = function(icon, $event) {
@@ -2635,5 +2639,6 @@ angular.module("umbraco")
             $event.preventDefault();
 
             $scope.model.value = icon;
+            browserToggled = true;
         }
     });

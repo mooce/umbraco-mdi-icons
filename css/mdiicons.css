@@ -1,3 +1,8 @@
+.mooce-mdiicons .mooce-icon-not-found {
+  text-align: center;
+  padding: 15px;
+
+}
 .mooce-mdiicons .mooce-browse-wrapper {
   padding-top: 15px;
 }
@@ -11,13 +16,14 @@
   position: relative;
 }
 
-.mooce-mdiicons .mooce-field-control span {
-  margin-top:5px;
+.mooce-mdiicons .mooce-field-control .mooce-field-value {
+  padding:6px;
   float:left;
 }
-.mooce-mdiicons .mooce-field-control span label {
-  margin: 0;
-  padding: 0.125rem 0.25rem;
+.mooce-mdiicons .mooce-field-control .mooce-field-value span {
+  display: inline-block;
+  padding: 0.25rem;
+
 }
 .mooce-mdiicons .mooce-field-control span:hover button {
   visibility: visible;

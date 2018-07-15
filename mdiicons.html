@@ -1,9 +1,9 @@
 <div class="mooce-mdiicons" ng-controller="Mooce.MdiIconPicker">
     <div class="mooce-field-control clearfix" ng-show="hasSelected()">
-        <button ng-click="toggleBrowser($event)" class="btn">Pick Icon<i class="mdi" ng-class="{ 'mdi-chevron-down' : !hasBrowser(), 'mdi-chevron-up' : hasBrowser() }"></i></button>
-        <span>
+        <button ng-click="toggleBrowser($event)" class="btn">{{ hasBrowser() ? 'Hide browser' : 'Browse' }}<i class="mdi" ng-class="{ 'mdi-chevron-down' : !hasBrowser(), 'mdi-chevron-up' : hasBrowser() }"></i></button>
+        <span class="mooce-field-value">
             <button ng-click="clear($event)" class="mdi mdi-close"></button>
-            <label>{{ model.value }}</label>
+            <span>{{ model.value }}</span>
         </span>
     </div>
 
@@ -14,9 +14,11 @@
         </div>
         
         <div class="mooce-icon-wrapper clearfix">
-            <button class="btn" ng-repeat="icon in icons | filter:query | limitTo : 30" ng-click="pick(icon, $event)" ng-style="{ background : (model.value == icon) ? '#33bf81' : 'white' }"> 
+            <button class="btn" ng-repeat="icon in filterdIcons=(icons | filter:query | limitTo : 30)" ng-click="pick(icon, $event)" ng-style="{ background : (model.value == icon) ? '#33bf81' : 'white' }"> 
                 <i class="mdi {{ icon }}"></i>
             </button>
+
+            <div class="mooce-icon-not-found" ng-hide="filterdIcons.length">No icons found matching "{{ query }}"</div>
         </div>
     </div>
 

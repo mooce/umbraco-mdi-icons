@@ -14,7 +14,7 @@
         </div>
         
         <div class="mooce-icon-wrapper clearfix">
-            <button class="btn" ng-repeat="icon in filterdIcons=(icons | filter:query | limitTo : 30)" ng-click="pick(icon, $event)" ng-style="{ background : (model.value == icon) ? '#33bf81' : 'white' }"> 
+            <button class="btn" ng-repeat="icon in filterdIcons=(icons | filter:query | limitTo : 20)" ng-click="pick(icon, $event)" ng-style="{ background : (model.value == icon) ? '#33bf81' : 'white' }"> 
                 <i class="mdi {{ icon }}"></i>
             </button>
 

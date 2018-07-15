@@ -3,19 +3,6 @@
   padding: 15px;
 
 }
-.mooce-mdiicons .mooce-browse-wrapper {
-  padding-top: 15px;
-}
-
-.mooce-mdiicons .mooce-browse-wrapper .mooce-icon-wrapper {
-  padding: 15px 0;
-}
-
-
-.mooce-mdiicons .mooce-field-wrapper {
-  position: relative;
-}
-
 .mooce-mdiicons .mooce-field-control .mooce-field-value {
   padding:6px;
   float:left;
@@ -46,6 +33,23 @@
 .mooce-mdiicons .mooce-field-control button {
   float: right;
 }
+.mooce-mdiicons .mooce-browse-wrapper {
+  padding-top: 15px;
+  
+}
+
+.mooce-mdiicons .mooce-browse-wrapper .mooce-icon-wrapper {
+  padding: 15px 0;
+  overflow-y: auto;
+
+  max-height: 130px;
+}
+
+
+.mooce-mdiicons .mooce-field-wrapper {
+  position: relative;
+}
+
 
 .mooce-mdiicons .mooce-field-wrapper input {
   width:100%;

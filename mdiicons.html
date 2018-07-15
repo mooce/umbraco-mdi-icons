@@ -2,12 +2,15 @@
     <div class="mooce-field-control clearfix" ng-show="hasSelected()">
         <button ng-click="toggleBrowser($event)" class="btn">{{ hasBrowser() ? 'Hide browser' : 'Browse' }}<i class="mdi" ng-class="{ 'mdi-chevron-down' : !hasBrowser(), 'mdi-chevron-up' : hasBrowser() }"></i></button>
         <span class="mooce-field-value">
-            <button ng-click="clearIcon($event)" class="mdi mdi-close"></button>
+            <i class="mdi" ng-class="model.value"></i>
             <span>{{ model.value }}</span>
+            <button ng-click="clearIcon($event)" class="mdi mdi-close"></button>
         </span>
     </div>
-
+    
     <div class="mooce-browse-wrapper" ng-show="hasBrowser()">
+        <hr>
+        
         <div class="mooce-field-wrapper">
             <input ng-model="browserQuery" type="text" placeholder="Search for icon" />
             <i class="mdi mdi-magnify"></i>

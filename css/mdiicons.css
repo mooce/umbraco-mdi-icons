@@ -7,10 +7,15 @@
   padding:6px;
   float:left;
 }
+.mooce-mdiicons .mooce-field-control .mooce-field-value .mdi {
+  padding: 0;
+  font-size: 1.5rem;
+  padding-right: 15px;
+}
 .mooce-mdiicons .mooce-field-control .mooce-field-value span {
-  display: inline-block;
-  padding: 0.25rem;
-
+  vertical-align: top;
+  top: 3px;
+  position: relative;
 }
 .mooce-mdiicons .mooce-field-control span:hover button {
   visibility: visible;
@@ -32,12 +37,7 @@
 
 .mooce-mdiicons .mooce-field-control button {
   float: right;
-}
-.mooce-mdiicons .mooce-browse-wrapper {
-  padding-top: 15px;
-  
-}
-
+} 
 .mooce-mdiicons .mooce-browse-wrapper .mooce-icon-wrapper {
   padding: 15px 0;
   overflow-y: auto;

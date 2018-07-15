@@ -2615,7 +2615,12 @@ angular.module("umbraco")
 
         $scope.hasBrowser = function() {
 
-            return !$scope.model.value;
+            return true; //!$scope.model.value;
+        }
+
+        $scope.toggleBrowser = function($event) {
+
+            $event.preventDefault();
         }
 
         $scope.clear = function($event) {

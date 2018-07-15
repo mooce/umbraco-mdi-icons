@@ -1,8 +1,18 @@
+.mooce-mdiicons .mooce-browse-wrapper {
+  padding-top: 15px;
+}
+
+.mooce-mdiicons .mooce-browse-wrapper .mooce-icon-wrapper {
+  padding: 15px 0;
+}
+
+
 .mooce-mdiicons .mooce-field-wrapper {
   position: relative;
 }
 
 .mooce-mdiicons .mooce-field-control span {
+  margin-top:5px;
   float:left;
 }
 .mooce-mdiicons .mooce-field-control span label {
@@ -19,6 +29,14 @@
   font-size: 1.5rem;
   color:#ff008d;
 }
+.mooce-mdiicons .mooce-field-control .mdi {
+  padding-left: 5px;
+  font-size:1.25rem;
+  top:2px;
+  right:-5px;
+  position: relative;
+}
+
 .mooce-mdiicons .mooce-field-control button {
   float: right;
 }

@@ -1,13 +1,13 @@
 <div class="mooce-mdiicons" ng-controller="Mooce.MdiIconPicker">
     <div class="mooce-field-control clearfix" ng-show="hasSelected()">
-        <button ng-click="clear()" class="btn">Browse</button>
+        <button ng-click="toggleBrowser($event)" class="btn">Pick Icon<i class="mdi" ng-class="{ 'mdi-chevron-down' : !hasBrowser(), 'mdi-chevron-up' : hasBrowser() }"></i></button>
         <span>
             <button ng-click="clear($event)" class="mdi mdi-close"></button>
             <label>{{ model.value }}</label>
         </span>
     </div>
 
-    <div ng-show="hasBrowser()">
+    <div class="mooce-browse-wrapper" ng-show="hasBrowser()">
         <div class="mooce-field-wrapper">
             <input ng-model="query" type="text" placeholder="Search for icon" />
             <i class="mdi mdi-magnify"></i>

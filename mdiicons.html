@@ -2,23 +2,23 @@
     <div class="mooce-field-control clearfix" ng-show="hasSelected()">
         <button ng-click="toggleBrowser($event)" class="btn">{{ hasBrowser() ? 'Hide browser' : 'Browse' }}<i class="mdi" ng-class="{ 'mdi-chevron-down' : !hasBrowser(), 'mdi-chevron-up' : hasBrowser() }"></i></button>
         <span class="mooce-field-value">
-            <button ng-click="clear($event)" class="mdi mdi-close"></button>
+            <button ng-click="clearIcon($event)" class="mdi mdi-close"></button>
             <span>{{ model.value }}</span>
         </span>
     </div>
 
     <div class="mooce-browse-wrapper" ng-show="hasBrowser()">
         <div class="mooce-field-wrapper">
-            <input ng-model="query" type="text" placeholder="Search for icon" />
+            <input ng-model="browserQuery" type="text" placeholder="Search for icon" />
             <i class="mdi mdi-magnify"></i>
         </div>
         
         <div class="mooce-icon-wrapper clearfix">
-            <button class="btn" ng-repeat="icon in filterdIcons=(icons | filter:query | limitTo : 20)" ng-click="pick(icon, $event)" ng-style="{ background : (model.value == icon) ? '#33bf81' : 'white' }"> 
+            <button class="btn" ng-repeat="icon in filterdIcons=(icons | filter:browserQuery | limitTo : 20)" ng-click="selectIcon(icon, $event)" ng-style="{ background : (model.value == icon) ? '#33bf81' : 'white' }"> 
                 <i class="mdi {{ icon }}"></i>
             </button>
 
-            <div class="mooce-icon-not-found" ng-hide="filterdIcons.length">No icons found matching "{{ query }}"</div>
+            <div class="mooce-icon-not-found" ng-hide="filterdIcons.length">No icons found matching "{{ browserQuery }}"</div>
         </div>
     </div>
 

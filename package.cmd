@@ -1,0 +1,1 @@
+nuget pack Mooce.UmbracoMdiIcons.csproj -OutputDirectory .\package\

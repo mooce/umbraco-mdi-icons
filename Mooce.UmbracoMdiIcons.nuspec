@@ -18,6 +18,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="App_Plugins\*" target="content" />
+    <file src="App_Plugins\**\*.*" target="Content\App_Plugins" />
   </files>
 </package>

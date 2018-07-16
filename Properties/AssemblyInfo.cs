@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("umbraco_mdi_icons")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Mooce.UmbracoMdiIcons")]
+[assembly: AssemblyDescription("Material Design Icons for Umbraco 7.11.1 and above")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("umbraco_mdi_icons")]
+[assembly: AssemblyCompany("Mooce")]
+[assembly: AssemblyProduct("Mooce.UmbracoMdiIcons")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

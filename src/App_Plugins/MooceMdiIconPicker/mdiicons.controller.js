@@ -5,8 +5,8 @@ angular.module("umbraco")
         var browserToggled = false;
         
         //load in mdi css
-        assetsService.loadCss("/App_Plugins/MooceMdiIconPicker/css/materialdesignicons.css");
-        assetsService.loadCss("/App_Plugins/MooceMdiIconPicker/css/mdiicons.css");
+        assetsService.loadCss("https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css");
+        assetsService.loadCss("/App_Plugins/MooceMdiIconPicker/styles.css");
          
         $scope.icons = mooceMdiIconData.icons;
 

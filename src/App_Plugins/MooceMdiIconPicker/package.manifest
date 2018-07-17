@@ -4,7 +4,7 @@
             alias: "Mooce.MdiIconPicker",
             name: "Mdi Icon Picker",
             editor: {
-                view: "~/App_Plugins/MooceMdiIconPicker/mdiicons.html"
+                view: "~/App_Plugins/MooceMdiIconPicker/mdiicons.view.html"
             }
         }
     ]

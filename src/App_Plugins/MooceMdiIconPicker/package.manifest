@@ -10,6 +10,7 @@
     ]
     ,
     javascript: [
-        '~/App_Plugins/MooceMdiIconPicker/mdiicons.controller.js'
+        '~/App_Plugins/MooceMdiIconPicker/mdiicons.service.js',
+        '~/App_Plugins/MooceMdiIconPicker/mdiicons.controller.js',
     ]
 }

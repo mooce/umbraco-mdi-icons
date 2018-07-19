@@ -1,7 +1,9 @@
 /src/bin
 /src/obj
 /src/.vs
+/.vs
 /packages
 /dist
 
 *.user
+*.suo
